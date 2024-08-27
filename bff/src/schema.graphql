@@ -1,0 +1,15 @@
+type Todo {
+  id: Int!
+  title: String!
+  is_completed: Boolean!
+}
+
+type User {
+  id: Int!
+  name: String!
+  todo: [Todo!]!
+}
+
+type Query {
+  getTodos: [Todo]!
+}
