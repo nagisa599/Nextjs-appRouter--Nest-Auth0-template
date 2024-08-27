@@ -1,4 +1,4 @@
-#　概要
+# 概要
 nextjs(approuter)と nest(grahpql)のテンプレート
 
 ## 利用技術
