@@ -2,8 +2,6 @@
 import { useUser } from "@auth0/nextjs-auth0/client";
 import React from "react";
 import { useGetTodosQuery } from "../../../graphql/dist/graphql";
-import { getAccessToken } from "@auth0/nextjs-auth0";
-import { error } from "console";
 
 const Page = () => {
   const [result] = useGetTodosQuery();
