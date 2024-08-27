@@ -6,6 +6,7 @@ export async function POST(request: NextRequest) {
   const res = new NextResponse();
   // cookieからacce
   const { accessToken } = await getAccessToken(request, res);
+  console.log("accessToken: ", accessToken);
   // ReadableStream をテキストに変換 (requestbodyを取得するため)
   const requestBody = await request.text();
   // objectに変換

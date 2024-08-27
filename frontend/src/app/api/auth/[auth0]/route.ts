@@ -4,8 +4,8 @@ export const GET = handleAuth({
   login: handleLogin({
     returnTo: "/profile",
     authorizationParams: {
-      audience: "http://localhost:3001",
-      // scope: "openid profile email", // 例として scope を追加
+      audience: "https://zenntest",
+      scope: "openid profile email", // scopeを再度有効にして拡張
     },
   }),
   signup: handleLogin({
